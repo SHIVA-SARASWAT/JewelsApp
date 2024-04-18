@@ -90,11 +90,26 @@ export class ProductDetailsComponent {
     }
 }
 
-  removeToCart(productDetailId:string){
-    this.product.removeCart(productDetailId)
-    console.log(productDetailId);
+  // removeToCart(productDetailId:string){
+  //   this.product.removeCart(productDetailId)
+  //   console.log(productDetailId);
     
-    this.removeCart = true;
+  //   this.removeCart = true;
+  // }
+  removeToCart(productId:string){
+    if(!localStorage.getItem('user')){
+this.product.removeCart(productId)
+    }else{
+      console.warn("cartData", this.cartData);
+      
+      this.cartData && this.product.removeToCart(this.cartData.id)
+      .subscribe((result)=>{
+        let user = localStorage.getItem('user');
+        let userId= user && JSON.parse(user).id;
+        this.product.getCartList(userId)
+      })
+    }
+    this.removeCart=true
   }
 
   decreaseProductQuantity(){
