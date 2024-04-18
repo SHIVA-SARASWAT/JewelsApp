@@ -261,7 +261,7 @@
     {
       "id": "89f7",
       "name": "Uzi",
-      "price": "$ 45",
+      "price": "$45",
       "category": "Sports",
       "color": "Black",
       "description": "UqsaujdQ",
@@ -715,54 +715,6 @@
       "productId": "1a4d"
     },
     {
-      "id": "1367",
-      "name": "Uzi",
-      "price": "$ 45",
-      "category": "Sports",
-      "color": "Black",
-      "description": "UqsaujdQ",
-      "image": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
-      "quantity": 0,
-      "userId": "2145",
-      "productId": "6a47"
-    },
-    {
-      "id": "cbf5",
-      "name": "Uzi",
-      "price": "$ 45",
-      "category": "Sports",
-      "color": "Black",
-      "description": "UqsaujdQ",
-      "image": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
-      "quantity": 0,
-      "userId": "2145",
-      "productId": "6a47"
-    },
-    {
-      "id": "621a",
-      "name": "Uzi",
-      "price": "$ 45",
-      "category": "Sports",
-      "color": "Black",
-      "description": "UqsaujdQ",
-      "image": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
-      "quantity": 0,
-      "userId": "2145",
-      "productId": "6a47"
-    },
-    {
-      "id": "3f7d",
-      "name": "",
-      "price": "",
-      "category": "",
-      "color": "",
-      "description": "",
-      "image": "https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U",
-      "quantity": 0,
-      "userId": "2145",
-      "productId": "0ffb"
-    },
-    {
       "id": "bd1f",
       "name": "Samuels",
       "price": "Rs 1435",
@@ -773,30 +725,6 @@
       "quantity": 0,
       "userId": "2145",
       "productId": "4258"
-    },
-    {
-      "id": "704b",
-      "name": "Uzi",
-      "price": "$ 45",
-      "category": "Sports",
-      "color": "Black",
-      "description": "UqsaujdQ",
-      "image": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
-      "quantity": 0,
-      "userId": "2145",
-      "productId": "6a47"
-    },
-    {
-      "id": "f3a8",
-      "name": "Uzi",
-      "price": "$ 45",
-      "category": "Sports",
-      "color": "Black",
-      "description": "UqsaujdQ",
-      "image": "https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI",
-      "quantity": 0,
-      "userId": "2145",
-      "productId": "6a47"
     },
     {
       "id": "8983",
@@ -821,18 +749,6 @@
       "quantity": 0,
       "userId": "2145",
       "productId": "0862"
-    },
-    {
-      "id": "eb0f",
-      "name": "",
-      "price": "",
-      "category": "",
-      "color": "",
-      "description": "",
-      "image": "https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U",
-      "quantity": 0,
-      "userId": "2145",
-      "productId": "0ffb"
     }
   ]
 }

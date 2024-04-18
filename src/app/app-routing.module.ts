@@ -10,6 +10,7 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
 import { SearchProductComponent } from './search-product/search-product.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'search-product/:query', component:SearchProductComponent},
   {path:'product-detail/:id', component:ProductDetailsComponent},
   {path:'user-auth',component:UserAuthComponent},
+  {path:'cart-page',component:CartPageComponent},
   {path:'**',component:PageNotFoundComponent}
 ];
 

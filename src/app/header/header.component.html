@@ -14,7 +14,7 @@
         <li><a routerLink="seller-auth">Seller</a></li>
         <li><a routerLink="">Home</a></li>
         <li><a routerLink="user-auth">Login/Sign-up</a></li>
-        <li><a href="#">Cart({{cartItemNumber}})</a></li>
+        <li routerLink="cart-page"><a>Cart({{cartItemNumber}})</a></li>
       </ul>
     </div>
     <div  [ngSwitch]="isMenuName" class="menu">
@@ -22,7 +22,7 @@
         <li><a>{{userName}}</a></li>
         <li><a routerLink="">Home</a></li>
         <li><a (click)="userLogout()">Logout</a></li>
-        <li><a >Cart({{cartItemNumber}})</a></li>
+        <li><a routerLink="cart-page">Cart({{cartItemNumber}})</a></li>
       </ul>
     </div>
     <div [ngSwitch]="isMenuName" class="menu">
