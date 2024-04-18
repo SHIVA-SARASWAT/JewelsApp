@@ -1,0 +1,38 @@
+<div class="signup-container">
+  <!-- First form for Sign Up -->
+  <form *ngIf="!showSignUpLogin" #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+    <h2>Sign Up</h2>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" ngModel name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" ngModel name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" ngModel name="password" placeholder="Enter your password" required>
+    </div>
+    <button type="submit" class="signup-button">Sign Up</button>
+    <!-- Link to switch to the Login form -->
+    <a (click)="openLogin()" class="" style="display: flex;justify-content: center;margin-top: 10px;">Have registered account? Login</a>
+  </form>
+
+  <!-- Second form for Login -->
+  <form *ngIf="showSignUpLogin" #sellerSignUp="ngForm" (ngSubmit)="login(sellerSignUp.value)">
+    <h2>Login</h2>
+    <p>{{loginError}}</p>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" ngModel name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" ngModel name="password" placeholder="Enter your password" required>
+    </div>
+    <button type="submit" class="signup-button">Login</button>
+    <!-- Link to switch to the Sign Up form -->
+    <a (click)="openSignup()"  style="display: flex;justify-content: center;margin-top: 10px;">Don't have an account? Sign Up</a>
+  </form>
+</div>

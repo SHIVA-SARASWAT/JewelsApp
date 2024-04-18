@@ -1,0 +1,37 @@
+<nav class="nav" style="margin-bottom: 30px;">
+    <h1><a routerLink="" style="text-decoration: none;">Petal Craft.In</a></h1>
+    <div *ngIf="isMenuName==='default'" class="nav-search">
+      <input #searchProductValue type="text" class="search-input" placeholder="Search Products" (keyup)="searchProduct($event)" (blur)="emptySearch()"/>
+      <button (click)="searchProductbar(searchProductValue.value)" class="search-button">Search</button>
+      <ul class="search-ul">
+        <li *ngFor="let search of queryProducts">
+          <a (mousedown)="navigateSearch(search.id)">{{search.name}}</a>
+        </li>
+      </ul>
+    </div>
+    <div  [ngSwitch]="isMenuName" class="menu">
+      <ul class="default-menu" *ngSwitchCase="'default'">
+        <li><a routerLink="seller-auth">Seller</a></li>
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="user-auth">Login/Sign-up</a></li>
+        <li><a href="#">Cart({{cartItemNumber}})</a></li>
+      </ul>
+    </div>
+    <div  [ngSwitch]="isMenuName" class="menu">
+      <ul class="default-menu" *ngSwitchCase="'user'">
+        <li><a>{{userName}}</a></li>
+        <li><a routerLink="">Home</a></li>
+        <li><a (click)="userLogout()">Logout</a></li>
+        <li><a >Cart({{cartItemNumber}})</a></li>
+      </ul>
+    </div>
+    <div [ngSwitch]="isMenuName" class="menu">
+      <ul class="default-menu" *ngSwitchCase="'seller'">
+        <li><a routerLink="seller-add-product">Add Product</a></li>
+        <li><a routerLink="seller-home">Product List</a></li>
+        <li><a (click)="sellerLogOut()">Logout</a></li>
+        <li><a href="#">{{sellerName}}</a></li>
+      </ul>
+    </div>
+  </nav>
+  

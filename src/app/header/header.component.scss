@@ -1,0 +1,84 @@
+/* General styling */
+.nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #2c3e50; /* Dark grayish blue */
+  }
+  
+  .nav-search {
+    flex: 1;
+    display: flex;
+    margin: 5px 5% 0 5%; /* top, right, bottom, left */
+  }
+  
+  .nav-search input {
+    flex: 1;
+    color: #2c3e50; /* Dark grayish blue */
+    border: 1px solid #2c3e50; /* Dark grayish blue */
+    border-right: none;
+    height: 39px;
+  }
+  
+  .nav-search button {
+    color: #2c3e50; /* Dark grayish blue */
+    border: 1px solid #2c3e50; /* Dark grayish blue */
+    height: 39px;
+    background-color: #ecf0f1; /* Light gray */
+  }
+  
+  .menu ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .menu ul li {
+    padding: 15px; /* Adjusted for consistency */
+  }
+  
+  .menu ul a {
+    text-decoration: none;
+    color: #2c3e50; /* Dark grayish blue */
+    cursor: pointer;
+  }
+  
+  /* Suggestions styling */
+  .suggested-search {
+    position: absolute;
+    top: 40px;
+    z-index: 10;
+    display: list-item !important; /* Ensure it's visible */
+    border: 1px solid #bdc3c7; /* Lighter gray */
+    background-color: #fff;
+    width: 300px;
+  }
+  
+  .suggested-search li {
+    padding: 5px;
+    border: 1px solid #bdc3c7; /* Lighter gray */
+  }
+  
+  .suggested-search li a {
+    cursor: pointer;
+    color: #2c3e50; /* Dark grayish blue */
+    text-decoration: none; /* Added to match other links */
+  }
+  .search-ul{
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    background: floralwhite;
+    min-width: 300px;
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  .search-ul li{
+    padding: 10px;
+    border: 1px solid blanchedalmond;
+  }

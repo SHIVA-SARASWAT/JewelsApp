@@ -1,0 +1,30 @@
+<table class="product-table">
+    <p style="color: red;">{{deleteMessage}}</p>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Color</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let products of addProduct">
+        <td>{{products.name}}</td>
+        <td>{{products.price}}</td>
+        <td>{{products.category}}</td>
+        <td>{{products.color}}</td>
+        <td>{{products.description}}</td>
+        <td><img src="{{products.image}}" style="height: 100px; width: 100px;"></td>
+       
+        <td>
+            <fa-icon (click)="deleteProduct(products.id)" [icon]="icon"></fa-icon>
+            <fa-icon [icon]="editIcon" class="margin-left"routerLink="/seller-update-product/{{products.id}}"></fa-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
