@@ -20,16 +20,16 @@ export interface product{
 }
 
 export interface cart{
-    name:string,
-    price:string,
-    category:string,
-    color:string,
-    image:string,
-    description:string,
-    id:string| undefined,
-    quantity:undefined | number,
-    productId:any,
-    userId:string
+    name:string;
+    price:string;
+    category:string;
+    color:string;
+    image:string;
+    description:string;
+    id:string| undefined;
+    quantity:undefined | number;
+    productId:any;
+    userId:string;
 }
 export interface usercartProductSum{
     Amount:number;
@@ -37,5 +37,13 @@ export interface usercartProductSum{
     Delivery:number;
     Discount:number;
     Total:number;
+}
+export interface order{
+    address:string;
+    contact:string;
+    email:string;
+    id:string | undefined;
+    totalPrice:number;
+    userId:string
 }
   

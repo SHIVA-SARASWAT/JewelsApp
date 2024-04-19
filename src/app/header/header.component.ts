@@ -97,7 +97,7 @@ export class HeaderComponent implements OnInit {
       let userId = JSON.parse(user).id;
       this.products.getCartProductsById(userId).subscribe((result) => {
         if (Array.isArray(result)) {
-          console.log(result);
+          // console.log(result);
 
           this.cartItemNumber = result.length
         }

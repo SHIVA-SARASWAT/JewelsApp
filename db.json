@@ -201,5 +201,15 @@
       "userId": "2145",
       "productId": "7a59"
     }
+  ],
+  "orders": [
+    {
+      "id": "e972",
+      "email": "saraswat.shiva2001@gmail.com",
+      "address": "151 A",
+      "contact": "08427707401",
+      "userId": "2145",
+      "totalPrice": 1600
+    }
   ]
 }
