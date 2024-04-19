@@ -2,9 +2,9 @@
     <h1>Cart Page</h1>
     <div class="row">
         <div class="col-sm-8 details">
-            <ul *ngFor="let cartProd of userCartProduct"> 
+            <ul *ngFor="let cartProd of userCartProduct" class="cart-item"> 
                 <li>
-                    <img src="{{cartProd.image}}" alt="">
+                    <img src="{{cartProd.image}}" alt="Product Image">
                 </li>
                 <li>
                     <span>Name: {{cartProd.name}}</span>
@@ -16,7 +16,7 @@
                     <span>Quantity : {{cartProd.quantity}}</span>
                 </li>
                 <li>
-                    <button class="form-button" (click)="removeToCart(cartProd.id)">Remove To Cart</button>
+                    <button class="remove-button" (click)="removeToCart(cartProd.id)">Remove To Cart</button>
                 </li>
             </ul>
         </div>
@@ -27,8 +27,8 @@
                 <li> <span>Tax:</span><span>{{userCartProductSummary.Tax}}</span></li>
                 <li> <span>Delivery:</span><span>{{userCartProductSummary.Delivery}}</span></li>
                 <li> <span>Discount:</span><span>{{userCartProductSummary.Discount}}</span></li>
-                <li> <span><h4>Total</h4></span> <span><h4>{{userCartProductSummary.Total}}</h4></span></li>
-                <button class="form-button max-width" routerLink="/cart-checkout">Checkout</button>
+                <li class="total"> <span>Total:</span><span>{{userCartProductSummary.Total}}</span></li>
+                <button class="checkout-button" routerLink="/cart-checkout">Checkout</button>
             </ul>
         </div>
     </div>
