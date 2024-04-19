@@ -31,4 +31,11 @@ export interface cart{
     productId:any,
     userId:string
 }
+export interface usercartProductSum{
+    Amount:number;
+    Tax:number;
+    Delivery:number;
+    Discount:number;
+    Total:number;
+}
   

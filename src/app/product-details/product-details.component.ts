@@ -12,7 +12,7 @@ import { UsersService } from '../services/users.service';
 export class ProductDetailsComponent {
   productDetail:undefined | product;
   removeCart:boolean = false;
-  productQuantitiy:number= 0;
+  productQuantitiy:number= 1;
   cartData:product | undefined
   cartProductNumberAfterLogin = new EventEmitter<number>();
   constructor(private activatedRoute: ActivatedRoute, private product:ProductService, private userService:UsersService){
@@ -113,7 +113,7 @@ this.product.removeCart(productId)
   }
 
   decreaseProductQuantity(){
-    if(this.productQuantitiy>=1){
+    if(this.productQuantitiy>=2){
       this. productQuantitiy = this.productQuantitiy - 1;
     } 
 

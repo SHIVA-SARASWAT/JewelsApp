@@ -23,12 +23,12 @@
         <div class="col-sm-4 summary">
             <h3>Summary</h3>
             <ul>
-                <li> <span>Amount:</span><span>$100</span></li>
-                <li> <span>Tax:</span><span>$10</span></li>
-                <li> <span>Delivery:</span><span>$5</span></li>
-                <li> <span>Discount:</span><span>$0</span></li>
-                <li> <span><h4>Total</h4></span> <span><h4>$115</h4></span></li>
-                <button class="form-button max-width">Checkout</button>
+                <li> <span>Amount:</span><span>{{userCartProductSummary.Amount}}</span></li>
+                <li> <span>Tax:</span><span>{{userCartProductSummary.Tax}}</span></li>
+                <li> <span>Delivery:</span><span>{{userCartProductSummary.Delivery}}</span></li>
+                <li> <span>Discount:</span><span>{{userCartProductSummary.Discount}}</span></li>
+                <li> <span><h4>Total</h4></span> <span><h4>{{userCartProductSummary.Total}}</h4></span></li>
+                <button class="form-button max-width" routerLink="/cart-checkout">Checkout</button>
             </ul>
         </div>
     </div>
