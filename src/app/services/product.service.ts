@@ -84,7 +84,7 @@ export class ProductService {
     }
 
   }
-  removeToCart(id: string) {
+  removeToCart(id: string | undefined) {
     return this.http.delete("http://localhost:3000/cart/" + id)
   }
   addToCart(cartData: cart) {
@@ -124,5 +124,20 @@ export class ProductService {
   }
   orderNow(data:order){
     return this.http.post("http://localhost:3000/orders", data)
+  }
+  getOrderItems(){
+    let user = localStorage.getItem('user');
+    let userId = user && JSON.parse(user).id
+    return this.http.get<order[]>(`http://localhost:3000/orders?userId=${userId}`)
+  }
+  deleteCartAfterOrder(userId:string){
+    return this.http.delete<order[]>(`http://localhost:3000/orders?userId=${userId}`,{observe:'response'}).subscribe((result)=>{
+      if(result){
+        this.cartProductNumber.emit([]);
+      }
+    })
+  }
+  cancelOrder(orderId:string|undefined){
+    return this.http.delete<order>(`http://localhost:3000/orders/${orderId}`)
   }
 }

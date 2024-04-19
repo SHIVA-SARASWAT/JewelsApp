@@ -1,6 +1,6 @@
 <nav class="nav" style="margin-bottom: 30px;">
     <h1><a routerLink="" style="text-decoration: none;">Petal Craft.In</a></h1>
-    <div *ngIf="isMenuName==='default'" class="nav-search">
+    <div *ngIf="isMenuName==='default' || isMenuName==='user'" class="nav-search">
       <input #searchProductValue type="text" class="search-input" placeholder="Search Products" (keyup)="searchProduct($event)" (blur)="emptySearch()"/>
       <button (click)="searchProductbar(searchProductValue.value)" class="search-button">Search</button>
       <ul class="search-ul">
